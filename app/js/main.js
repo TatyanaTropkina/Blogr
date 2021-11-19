@@ -90,8 +90,4 @@ $(function(){
 		}
 	});
 
-
-	let heightHeaderContent = $('.header__content').height();
-		$(":root").css("--height-content", heightHeaderContent + 'px');
-
 })

@@ -8,32 +8,12 @@
 	--border-radius: 192px;
 }
 
-.header.anim {
-	.header__wrapper::after {
-		opacity: 1;
-		transform: scale(1);
-
-	}
-
-	.header__title {
-		@include anim(-100px, 0, 1.5s, 0);
-
-	}
-
-	.header__suptitle {
-		@include anim(-50px, 0, 1.5s, 1s);
-	}
-
-	.header__links {
-		@include anim(40px, 0, 2s, 1.2s);
-
-	}
-
-}
-
 .header {
-	height: 100vh;
+	// height: 100vh;
+	max-height: 600px;
+	height: 100%;
 	min-height: 400px;
+	// height: 600px;
 	border-bottom-left-radius: var(--border-radius);
 	position: relative;
 	margin-bottom: 50px;
@@ -80,7 +60,7 @@
 	}
 
 	&__actions-btn {
-		padding: 17px 40px;
+		padding: 15px 40px;
 	}
 
 	&__actions-btn--login {
@@ -98,19 +78,11 @@
 		margin-left: 20px;
 	}
 
-	&__inner {
-		padding: 60px 0;
-		height: calc(100vh - 120px);
-		min-height: calc(120px + var(--height-content));
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-	}
-
 	&__content {
 		max-width: 800px;
 		text-align: center;
+		padding: 135px 0 150px;
+		margin: 0 auto;
 	}
 
 	&__title {
@@ -143,8 +115,31 @@
 }
 
 
+.header.anim {
+	.header__wrapper::after {
+		opacity: 1;
+		transform: scale(1);
+
+	}
+
+	.header__title {
+		@include anim(-100px, 0, 1.5s, 0);
+
+	}
+
+	.header__suptitle {
+		@include anim(-50px, 0, 1.5s, 1s);
+	}
+
+	.header__links {
+		@include anim(40px, 0, 2s, 1.2s);
+
+	}
+
+}
+
 .header-menu {
-	margin: 0 0 0 30px;
+	margin: 0 auto 0 60px;
 
 
 	&__list {
@@ -233,8 +228,9 @@
 	}
 
 	&__title {
-		margin-bottom: 40px;
+		font-size: 37px;
 		line-height: 120%;
+		margin-bottom: 30px;
 	}
 
 	&__text {
