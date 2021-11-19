@@ -15,6 +15,20 @@
 
 	}
 
+	.header__title {
+		@include anim(-100px, 0, 1.5s, 0);
+
+	}
+
+	.header__suptitle {
+		@include anim(-50px, 0, 1.5s, 1s);
+	}
+
+	.header__links {
+		@include anim(40px, 0, 2s, 1.2s);
+
+	}
+
 }
 
 .header {
@@ -104,24 +118,18 @@
 		font-size: 40px;
 		padding-bottom: 20px;
 		line-height: 140%;
-		@include anim(-100px, 0, 1.5s, 0);
-
 	}
 
 	&__suptitle {
 		@extend %overpass-light;
 		font-size: 25px;
 		margin-bottom: 48px;
-		@include anim(-50px, 0, 1.5s, 1s);
-
 
 	}
 
 	&__links {
 		display: flex;
 		justify-content: center;
-		@include anim(40px, 0, 2s, 1.2s);
-
 
 	}
 
