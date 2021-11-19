@@ -1,0 +1,65 @@
+// @function max($numbers...) {
+// 	@return m#{a}x(#{$numbers});
+// }
+
+// @function min($numbers...) {
+// 	@return m#{a}x(#{$numbers});
+// }
+
+%overpass-light {
+	font-family: 'Overpass', sans-serif;
+	font-weight: 300;
+}
+
+%overpass-semibold {
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+}
+
+%ubuntu-regular {
+
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+
+%ubuntu-medium {
+
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+}
+
+%ubuntu-bold {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+
+%content {
+	position: absolute;
+	content: '';
+}
+
+%O {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+$transition: all .2s;
+
+$light-red: hsl(356, 100%, 66%);
+$very-light-red: hsl(355, 100%, 74%);
+$very-dark-blue: hsl(208, 49%, 24%);
+
+
+$white: hsl(0, 0%, 100%);
+$grayish-blue: hsl(240, 2%, 79%);
+$very-dark-grayish-blue: hsl(207, 13%, 34%);
+$very-dark-black-blue: hsl(240, 10%, 16%);
+
+
+$very-light-red-gradient: hsl(13, 100%, 72%);
+$light-red-gradient: hsl(353, 100%, 62%);
+$very-dark-gray-blue: hsl(237, 17%, 21%);
+$very-dark-desaturated-blue: hsl(237, 23%, 32%);

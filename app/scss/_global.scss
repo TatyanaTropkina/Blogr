@@ -1,0 +1,267 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+
+}
+
+* {
+	box-sizing: border-box;
+
+	&::after,
+	&::before {
+		@extend %content;
+	}
+}
+
+body {
+
+	overflow-X: hidden;
+	@extend %ubuntu-regular;
+	color: $very-dark-grayish-blue;
+	font-size: 16px;
+	line-height: 174%;
+	min-width: 320px;
+}
+
+ul,
+li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	transition: all .2s;
+
+}
+
+p {
+	padding: 0;
+	margin: 0;
+
+}
+
+figure {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	outline: none;
+
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}
+
+
+.container {
+	max-width: 1140px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+}
+
+.container-fluid {
+	max-width: 1400px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	transition: $transition;
+	border-radius: 50px;
+	line-height: 24px;
+	border: 1px solid transparent;
+	transition: $transition;
+
+
+}
+
+.btn--fill {
+	background-color: $white;
+	color: $light-red;
+	border-color: $light-red;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $very-light-red;
+		color: $white;
+		border-color: $very-light-red;
+	}
+}
+
+.btn--transparent {
+	background-color: transparent;
+	color: $white;
+	border-color: $white;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $white;
+		color: $very-light-red;
+		border-color: $light-red;
+	}
+}
+
+.logo {
+
+	&__img {
+		width: 100px;
+		height: 40px;
+		object-fit: cover;
+	}
+}
+
+.menu {
+
+	&__list-title {
+		color: $white;
+	}
+
+	&__list-item+&__list-item {
+		margin-top: 10px;
+	}
+
+	&__list-link {
+		color: $white;
+	}
+
+	&__dropdown {
+		position: relative;
+		padding: 0 0 30px 0;
+		margin: 0 0 -30px 0;
+
+	}
+
+	&__dropdown-title {
+		position: relative;
+		padding: 0 18px 2px 0;
+		color: $white;
+		cursor: pointer;
+
+		&::after {
+			background: url(../images/icon-arrow-light.svg)center / cover no-repeat;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 10px;
+			height: 8px;
+			transition: all .4s;
+		}
+
+		&::before {
+			background-color: $white;
+			height: 1px;
+			width: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			transition: $transition;
+		}
+	}
+
+	&__dropdown.closed {
+		.menu__dropdown-list {
+			display: none;
+		}
+	}
+
+	&__dropdown-title.open {
+		&::after {
+			transform: translateY(-50%) rotateX(180deg);
+		}
+
+		&::before {
+			width: 100%;
+		}
+	}
+
+
+
+	&__dropdown-list {
+		position: absolute;
+		top: 50px;
+		left: 0;
+		padding: 30px 25px;
+		border-radius: 8px;
+		background-color: $white;
+		box-shadow: -1px 13px 43px 2px rgba(0, 0, 0, 0.14);
+	}
+
+	&__dropdown-link {
+		color: $very-dark-black-blue;
+
+		&:hover {
+			font-weight: 500;
+		}
+	}
+}
+
+
+._light {
+	color: $white;
+}
+
+._dark {
+	color: $very-dark-black-blue;
+}
+
+.title {
+	@extend %overpass-semibold;
+	font-size: 38px;
+	line-height: 130%;
+}
+
+.section {
+
+	&__items {
+		width: 50%;
+		max-width: 520px;
+		padding: 190px 0 180px;
+	}
+
+	&__item {
+		margin-bottom: 84px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__item-title {
+		color: $very-dark-black-blue;
+		@extend %overpass-semibold;
+		font-size: 29px;
+		margin-bottom: 33px;
+	}
+
+	&__item-text {
+		@extend %overpass-light;
+		font-size: 17px;
+		line-height: 178%;
+		color: $very-dark-grayish-blue;
+	}
+}
