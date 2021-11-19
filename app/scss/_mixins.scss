@@ -1,0 +1,12 @@
+@mixin anim($transformY, $transformX, $transition, $delay) {
+	transform: translateY($transformY) translateX($transformX);
+	opacity: 0;
+	transition: $transition;
+	transition-delay: $delay;
+
+	&.anim {
+		transform: translateY(0) translateX(0);
+		opacity: 1;
+	}
+
+}
