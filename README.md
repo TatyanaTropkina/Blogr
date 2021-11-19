@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://tatyanatropkina.github.io/Blogr/)
+- Live Site URL: (https://tatyanatropkina.github.io/Blogr/)
 
 ## My process
 
