@@ -5,7 +5,8 @@
 @import "keyframes";
 
 :root {
-	--border-radius: 192px;
+	--border-radius: 150px;
+
 }
 
 .header {
@@ -23,11 +24,10 @@
 		z-index: -4;
 
 		&::after {
-
-			top: -1300px;
-			left: 0;
-			bottom: -1300px;
-			right: -737px;
+			top: -400px;
+			bottom: -400px;
+			left: -500px;
+			right: -1300px;
 			background: url(../images/bg-pattern-intro.svg)center / cover no-repeat;
 			z-index: -1;
 			transition: all 2s;
@@ -173,6 +173,7 @@
 
 	&__title {
 		text-align: center;
+		color: $very-dark-blue;
 
 	}
 
@@ -196,7 +197,7 @@
 	&__intro-bg {
 		border-bottom-left-radius: var(--border-radius);
 		border-top-right-radius: var(--border-radius);
-		background: url(../images/bg-pattern-circles.svg) -220px 90% / cover no-repeat;
+		background: url(../images/bg-pattern-circles.svg) -220px 85% / cover no-repeat;
 	}
 
 	&__intro {
@@ -215,7 +216,7 @@
 	}
 
 	&__intro-content {
-		padding: 80px 0 90px;
+		padding: 118px 0 100px;
 		margin-left: auto;
 	}
 
@@ -237,7 +238,7 @@
 
 	&__content-bg {
 		position: relative;
-		padding: 100px 0 50px;
+		padding: 0 0 50px;
 
 		&::after {
 			background: url(../images/illustration-laptop-desktop.svg) center / contain no-repeat;

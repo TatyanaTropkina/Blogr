@@ -298,7 +298,7 @@
 @media (max-width: 500px) {
 	.header {
 
-		margin-bottom: 30px;
+		margin-bottom: 0;
 
 		&__title {
 			font-size: 35px;
@@ -321,8 +321,24 @@
 		top: 90px;
 	}
 
+	.title {
+		font-size: 30px;
+	}
+
+	.design {
+		margin-bottom: 0;
+	}
+
 	.structure {
-		margin: 200px 0 120px;
+		margin: 200px 0 0;
+
+		&__intro {
+			margin-bottom: 0;
+		}
+
+		&__content-bg {
+			padding: 50px 0 0;
+		}
 	}
 
 	.footer {

@@ -233,6 +233,7 @@ button {
 	@extend %overpass-semibold;
 	font-size: 38px;
 	line-height: 130%;
+
 }
 
 .section {
@@ -252,7 +253,7 @@ button {
 	}
 
 	&__item-title {
-		color: $very-dark-black-blue;
+		color: $very-dark-blue;
 		@extend %overpass-semibold;
 		font-size: 29px;
 		margin-bottom: 33px;
